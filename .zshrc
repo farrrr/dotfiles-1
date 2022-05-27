@@ -667,6 +667,10 @@ if [ -x "$(command -v prettyping)" ]; then
   compdef prettyping=ping
 fi
 
+if [ -x "$(command -v kubectl)" ]; then
+  source <(kubectl completion zsh)
+fi
+
 ' light-mode for zdharma-continuum/null
 
 # it is 0.05s faster to load compinit in turbo mode, but all completions should be loaded with zinit then
