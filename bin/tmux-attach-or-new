@@ -1,2 +1,0 @@
-#!/bin/sh
-tmux -u new-session -A -s base
